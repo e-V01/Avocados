@@ -11,6 +11,7 @@
 		9EA5CE0F2B91FC780069964D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA5CE0E2B91FC780069964D /* ContentView.swift */; };
 		9EA5CE112B91FC7A0069964D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EA5CE102B91FC7A0069964D /* Assets.xcassets */; };
 		9EA5CE142B91FC7A0069964D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EA5CE132B91FC7A0069964D /* Preview Assets.xcassets */; };
+		9EA5CE1B2B9202D10069964D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EA5CE1A2B9202D10069964D /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		9EA5CE0E2B91FC780069964D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9EA5CE102B91FC7A0069964D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EA5CE132B91FC7A0069964D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9EA5CE1A2B9202D10069964D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 				9EA5CE0C2B91FC780069964D /* AvocadosApp.swift */,
 				9EA5CE0E2B91FC780069964D /* ContentView.swift */,
 				9EA5CE102B91FC7A0069964D /* Assets.xcassets */,
+				9EA5CE1A2B9202D10069964D /* Launch Screen.storyboard */,
 				9EA5CE122B91FC7A0069964D /* Preview Content */,
 			);
 			path = Avocados;
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EA5CE1B2B9202D10069964D /* Launch Screen.storyboard in Resources */,
 				9EA5CE142B91FC7A0069964D /* Preview Assets.xcassets in Resources */,
 				9EA5CE112B91FC7A0069964D /* Assets.xcassets in Resources */,
 			);

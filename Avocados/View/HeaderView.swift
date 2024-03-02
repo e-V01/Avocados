@@ -17,9 +17,12 @@ struct HeaderView: View {
             .speed(1)
             .delay(0.25)
     }
+    
+    var header: Header
+    
     var body: some View {
         ZStack {
-            Image("avocado-slice-1")
+            Image(header.image)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
             
@@ -28,13 +31,13 @@ struct HeaderView: View {
                     .fill(Color("ColorGreenLight"))
                     .frame(width: 4)
                 VStack(alignment: .leading, spacing: 0) {
-                    Text("Avocado".uppercased())
+                    Text(header.headline.uppercased())
                         .font(.system(.title, design: .serif))
                         .fontWeight(.bold)
                         .foregroundStyle(Color.white)
                         .shadow(radius: 3)
                     
-                    Text("Avocados are a powerhouse ingridients at any meal at any time")
+                    Text(header.subheadline)
                         .font(.footnote)
                         .lineLimit(2)
                         .multilineTextAlignment(.leading)
@@ -44,7 +47,7 @@ struct HeaderView: View {
                 .padding(.vertical, 0)
                 .padding(.horizontal, 20)
                 .frame(width: 281, height: 105)
-            .background(Color("ColorBlackTransparentLight"))
+                .background(Color("ColorBlackTransparentLight"))
             }
             .frame(width: 285, height: 105, alignment: .center)
             .offset(x: -40, y: showHeadline ? 75 : 220)
@@ -59,7 +62,7 @@ struct HeaderView: View {
 }
 
 #Preview {
-    HeaderView()
+    HeaderView(header: headerData[0])
         .previewLayout(.sizeThatFits)
         .preferredColorScheme(.dark)
 }

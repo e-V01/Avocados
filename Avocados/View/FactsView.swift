@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct FactsView: View {
+    var fact: Fact
     var body: some View {
         ZStack {
-            Text("It’s little wonder there are so many health benefits when a single serve of avocado (1/4 or 50g) boasts healthy fats, fibre, folate, niacin, vitamins C, B5, E & K, potassium and antioxidants.")
+            Text(fact.content)
                 .padding(.leading, 55)
                 .padding(.trailing, 10)
                 .padding(.vertical, 3)
@@ -26,7 +27,7 @@ struct FactsView: View {
                 .font(.footnote)
                 .foregroundStyle(Color.white)
             
-            Image("avocado-fact-2")
+            Image(fact.image)
                 .resizable()
                 .frame(width: 66, height: 66, alignment: .center)
                 .clipShape(Circle())
@@ -56,6 +57,6 @@ struct FactsView: View {
 }
 
 #Preview {
-    FactsView()
+    FactsView(fact: factsData[0])
         .previewLayout(.fixed(width: 400, height: 220))
 }

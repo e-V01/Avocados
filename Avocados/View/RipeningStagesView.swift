@@ -18,6 +18,7 @@ struct RipeningStagesView: View {
                     ForEach(ripeningStages) { stage in
                         RipeningView(ripening: stage)
                     }
+                    
                 }
                 .padding(.vertical)
                 .padding(.horizontal, 25)

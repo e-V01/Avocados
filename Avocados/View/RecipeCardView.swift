@@ -47,7 +47,7 @@ struct RecipeCardView: View {
                 RecipeRatingView(recipe: recipe)
                 
                 // COOKING
-                
+                RecipeCookingView(recipe: recipe)
             }
             .padding()
             .padding(.bottom, 12)
